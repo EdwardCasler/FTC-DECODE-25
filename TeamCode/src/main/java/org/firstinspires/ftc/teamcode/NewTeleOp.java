@@ -65,6 +65,7 @@ public class NewTeleOp extends OpMode {
             if(sensor.getVoltage() < lowestValue && sensor.getVoltage() > 0.1) {
                 lowestValue = sensor.getVoltage();
             }
+
         }
         if(lowestValue == Double.POSITIVE_INFINITY) {
             lowestValue = 14;
