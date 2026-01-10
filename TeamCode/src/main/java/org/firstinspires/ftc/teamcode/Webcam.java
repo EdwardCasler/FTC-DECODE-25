@@ -39,12 +39,15 @@ public class Webcam extends OpMode {
             //if distances are close enough don't care
             float xDist = Math.abs(id20.ftcPose.x) > 2 ? (float)id20.ftcPose.x : 0;
             float zDist = Math.abs(id20.ftcPose.z) > 5 ? (float)id20.ftcPose.z : 0;
+            float yError = Math.abs(id20.ftcPose.yaw) > 3 ? (float)id20.ftcPose.yaw : 0;
 
-            float x = Math.signum(xDist);
-            float z = Math.signum(zDist);
+            float x = Math.signum(xDist) * 0.25f;
+            float y = Math.signum(yError) * 0.25f;
+            float z = Math.signum(zDist) * 0.25f;
 
             if(id20.ftcPose.range > 20) {
                 drive(z, x, 0);
+                //drive(0, 0, y);
             }
         }
     }
