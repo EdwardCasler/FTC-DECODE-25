@@ -1,4 +1,4 @@
-## NOTICEa
+## NOTICE EDWARD's NAME IS EDDIE
 
 This repository contains the public FTC SDK for the DECODE (2025-2026) competition season for the PINE LAKE ROBOTICS TEAM!
 
