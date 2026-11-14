@@ -28,8 +28,6 @@
  */
 
 package org.firstinspires.ftc.robotcontroller.external.samples;
-
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -80,12 +78,10 @@ import java.util.concurrent.TimeUnit;
  * Speed and Turn sensitivity can be adjusted using the SPEED_GAIN and TURN_GAIN constants.
  *
  * Use Android Studio to Copy this Class, and Paste it into the TeamCode/src/main/java/org/firstinspires/ftc/teamcode folder.
- * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list.
  *
  */
 
 @TeleOp(name="Tank Drive To AprilTag", group = "Concept")
-@Disabled
 public class RobotAutoDriveToAprilTagTank extends LinearOpMode
 {
     // Adjust these numbers to suit your robot.

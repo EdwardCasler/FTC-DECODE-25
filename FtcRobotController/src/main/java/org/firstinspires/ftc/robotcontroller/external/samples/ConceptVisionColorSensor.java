@@ -22,8 +22,6 @@
 package org.firstinspires.ftc.robotcontroller.external.samples;
 
 import android.util.Size;
-
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
@@ -56,10 +54,7 @@ import org.firstinspires.ftc.vision.opencv.PredominantColorProcessor;
  *       Or use a screen copy utility like ScrCpy.exe to view the video remotely.
  *
  * Use Android Studio to Copy this Class, and Paste it into your team's code folder with a new name.
- * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  */
-
-@Disabled
 @TeleOp(name = "Concept: Vision Color-Sensor", group = "Concept")
 public class ConceptVisionColorSensor extends LinearOpMode
 {

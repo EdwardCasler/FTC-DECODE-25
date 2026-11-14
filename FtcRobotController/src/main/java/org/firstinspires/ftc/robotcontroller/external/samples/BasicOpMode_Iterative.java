@@ -28,8 +28,6 @@
  */
 
 package org.firstinspires.ftc.robotcontroller.external.samples;
-
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -47,11 +45,9 @@ import com.qualcomm.robotcore.util.Range;
  * It includes all the skeletal structure that all iterative OpModes contain.
  *
  * Use Android Studio to Copy this Class, and Paste it into your team's code folder with a new name.
- * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  */
 
 @TeleOp(name="Basic: Iterative OpMode", group="Iterative OpMode")
-@Disabled
 public class BasicOpMode_Iterative extends OpMode
 {
     // Declare OpMode members.

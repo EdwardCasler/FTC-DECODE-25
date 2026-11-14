@@ -28,8 +28,6 @@
  */
 
 package org.firstinspires.ftc.robotcontroller.external.samples;
-
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
@@ -42,7 +40,6 @@ import org.firstinspires.ftc.vision.apriltag.AprilTagProcessor;
  * This OpMode demonstrates the basics of using multiple vision portals simultaneously
  */
 @TeleOp(name = "Concept: AprilTagMultiPortal", group = "Concept")
-@Disabled
 public class ConceptAprilTagMultiPortal extends LinearOpMode
 {
     VisionPortal portal1;

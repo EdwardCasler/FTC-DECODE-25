@@ -3,7 +3,6 @@ repositories {
     google() // Needed for androidx
     maven { url = 'https://maven.brott.dev/' }
     maven { url = 'https://acmerobotics.jfrog.io/artifactory/ftc/' }
-    jcenter()
 }
 
 dependencies {

@@ -28,8 +28,6 @@
  */
 
 package org.firstinspires.ftc.robotcontroller.external.samples;
-
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
@@ -47,7 +45,6 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
  * put, get, containsKey, remove, etc.
  */
 @TeleOp(name = "Concept: Blackboard", group = "Concept")
-@Disabled
 public class ConceptBlackboard extends OpMode {
     // We use constants here so we won't have the problem of typos in different places when we
     // meant to refer to the same thing.

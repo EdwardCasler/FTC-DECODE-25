@@ -28,8 +28,6 @@
  */
 
 package org.firstinspires.ftc.robotcontroller.external.samples;
-
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.OpticalDistanceSensor;
@@ -39,10 +37,8 @@ import com.qualcomm.robotcore.hardware.OpticalDistanceSensor;
  * It assumes that the ODS sensor is configured with a name of "sensor_ods".
  *
  * Use Android Studio to Copy this Class, and Paste it into your team's code folder with a new name.
- * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  */
 @TeleOp(name = "Sensor: MR ODS", group = "Sensor")
-@Disabled
 public class SensorMROpticalDistance extends LinearOpMode {
 
   OpticalDistanceSensor odsSensor;  // Hardware Device Object

@@ -30,7 +30,6 @@
 package org.firstinspires.ftc.robotcontroller.external.samples;
 
 import com.qualcomm.hardware.andymark.AndyMarkIMUOrientationOnRobot;
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.IMU;
@@ -67,12 +66,10 @@ import static com.qualcomm.hardware.andymark.AndyMarkIMUOrientationOnRobot.xyzOr
  * illustrated here.
  *
  * Use Android Studio to Copy this Class, and Paste it into your team's code folder with a new name.
- * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list.
  *
  * Finally, edit this OpMode to use at least one angle around an axis to orient your AndyMark IMU.
  */
 @TeleOp(name = "Sensor: AndyMark IMU Non-Orthogonal", group = "Sensor")
-@Disabled     // Comment this out to add to the OpMode list
 public class SensorAndyMarkIMUNonOrthogonal extends LinearOpMode
 {
     // The AndyMark IMU sensor object

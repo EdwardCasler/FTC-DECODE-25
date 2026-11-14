@@ -24,7 +24,6 @@ package org.firstinspires.ftc.robotcontroller.external.samples;
 import com.qualcomm.hardware.digitalchickenlabs.OctoQuad;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
@@ -58,11 +57,9 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
  * This sample does not show how to interpret these readings, just how to obtain and display them.
  *
  * Use Android Studio to Copy this Class, and Paste it into your team's code folder with a new name.
- * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  *
  * See the sensor's product page: https://www.tindie.com/products/35114/
  */
-@Disabled
 @TeleOp(name = "OctoQuad Basic", group="OctoQuad")
 public class SensorOctoQuad extends LinearOpMode {
 
