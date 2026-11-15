@@ -28,6 +28,8 @@
  */
 
 package org.firstinspires.ftc.robotcontroller.external.samples;
+
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.util.ElapsedTime;
@@ -36,6 +38,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
  * Demonstrates an empty iterative OpMode
  */
 @TeleOp(name = "Concept: NullOp", group = "Concept")
+@Disabled
 public class ConceptNullOp extends OpMode {
 
   private ElapsedTime runtime = new ElapsedTime();

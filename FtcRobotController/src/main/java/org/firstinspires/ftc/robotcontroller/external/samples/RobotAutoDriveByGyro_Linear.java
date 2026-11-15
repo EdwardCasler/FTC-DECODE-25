@@ -31,6 +31,7 @@ package org.firstinspires.ftc.robotcontroller.external.samples;
 
 import com.qualcomm.hardware.rev.RevHubOrientationOnRobot;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.IMU;
@@ -84,9 +85,11 @@ import org.firstinspires.ftc.robotcore.external.navigation.YawPitchRollAngles;
  *      "Proportional Gain" is a constant that YOU choose to set the "strength" of the steering response.
  *
  *  Use Android Studio to Copy this Class, and Paste it into your "TeamCode" folder with a new name.
+ *  Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  */
 
 @Autonomous(name="Robot: Auto Drive By Gyro", group="Robot")
+@Disabled
 public class RobotAutoDriveByGyro_Linear extends LinearOpMode {
 
     /* Declare OpMode members. */

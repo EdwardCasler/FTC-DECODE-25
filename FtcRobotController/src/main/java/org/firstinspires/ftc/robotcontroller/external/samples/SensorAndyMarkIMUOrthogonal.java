@@ -32,6 +32,7 @@ package org.firstinspires.ftc.robotcontroller.external.samples;
 import com.qualcomm.hardware.andymark.AndyMarkIMUOrientationOnRobot;
 import com.qualcomm.hardware.andymark.AndyMarkIMUOrientationOnRobot.I2cPortFacingDirection;
 import com.qualcomm.hardware.andymark.AndyMarkIMUOrientationOnRobot.LogoFacingDirection;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.IMU;
@@ -72,11 +73,13 @@ import org.firstinspires.ftc.robotcore.external.navigation.YawPitchRollAngles;
  *    I2cPortFacingDirection
  *
  * Use Android Studio to Copy this Class, and Paste it into your team's code folder with a new name.
+ * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list.
  *
  * Finally, choose the two correct parameters to define how your AndyMark IMU is mounted and edit
  * this OpMode to use those parameters.
  */
 @TeleOp(name = "Sensor: AndyMark IMU Orthogonal", group = "Sensor")
+@Disabled   // Comment this out to add to the OpMode list
 public class SensorAndyMarkIMUOrthogonal extends LinearOpMode
 {
     // The AndyMark IMU sensor object

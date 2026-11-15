@@ -22,6 +22,7 @@
 package org.firstinspires.ftc.robotcontroller.external.samples;
 
 import com.qualcomm.hardware.digitalchickenlabs.OctoQuad;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.Gamepad;
@@ -41,6 +42,8 @@ import java.util.Stack;
  *
  * This OpMode assumes that the OctoQuad is attached to an I2C interface named "octoquad" in the robot configuration.
  *
+ * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
+ *
  * Select, Init and run the "OctoQuad Configuration Tool" OpMode
  * Read the blue User-Interface tips at the top of the telemetry screen.
  * Use the UI buttons to navigate the menu and make any desired changes to the OctoQuad configuration.
@@ -49,6 +52,7 @@ import java.util.Stack;
  * See the sensor's product page: https://www.tindie.com/products/digitalchickenlabs/octoquad-8ch-quadrature-pulse-width-decoder/
  */
 @TeleOp(name = "OctoQuad Configuration Tool", group="OctoQuad")
+@Disabled
 public class UtilityOctoQuadConfigMenu extends LinearOpMode
 {
     TelemetryMenu.MenuElement rootMenu = new TelemetryMenu.MenuElement("OctoQuad Config Menu", true);

@@ -22,6 +22,8 @@
 package org.firstinspires.ftc.robotcontroller.external.samples;
 
 import android.util.Size;
+
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.util.SortOrder;
@@ -59,7 +61,10 @@ import java.util.List;
  * This is helpful when configuring the ColorBlobLocatorProcessor parameters.
  *
  * Use Android Studio to Copy this Class, and Paste it into your team's code folder with a new name.
+ * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  */
+
+@Disabled
 @TeleOp(name = "Concept: Color-Locator (Rectangle)", group = "Concept")
 public class ConceptVisionColorLocator_Rectangle extends LinearOpMode
 {
