@@ -20,14 +20,9 @@ public class teleopjava extends LinearOpMode {
     private DcMotor intake = null;
     private DcMotor fly = null;
 
-    // Continuous Rotation Servos
-    private CRServo s1 = null;
-    private CRServo s2 = null;
-
     // Odometry / I2C Device on Port 2
     // If using goBILDA Pinpoint, replace with: GoBildaPinpointDriver odom;
     // For generic I2C device:
-    private I2cDeviceSynch i2cOdometry = null;
 
     @Override
     public void runOpMode() {
@@ -41,11 +36,6 @@ public class teleopjava extends LinearOpMode {
         intake = hardwareMap.get(DcMotor.class, "intake");
         fly = hardwareMap.get(DcMotor.class, "fly");
 
-        s1 = hardwareMap.get(CRServo.class, "s1");
-        s2 = hardwareMap.get(CRServo.class, "s2");
-
-        // If using a generic I2C device configured on I2C Port 2:
-        // i2cOdometry = hardwareMap.get(I2cDeviceSynch.class, "odom");
 
         // --- 2. MOTOR DIRECTIONS ---
         // Adjust these to Reverse if your robot moves backwards/spins incorrectly
@@ -103,23 +93,6 @@ public class teleopjava extends LinearOpMode {
             } else {
                 fly.setPower(0.0);
             }
-
-            // --- 5. FRONT CONTINUOUS ROTATION SERVOS (A BUTTON) ---
-            // Holding 'A' turns both continuous rotation servos on
-            if (gamepad1.a) {
-                s1.setPower(1.0); // Set power (1.0 = full speed forward, -1.0 = reverse)
-                s2.setPower(1.0);
-            } else {
-                s1.setPower(0.0); // Stop servo
-                s2.setPower(0.0);
-            }
-
-            // --- 6. ODOMETRY / I2C PORT 2 READINGS ---
-            // Reading data from I2C Port 2 (Example template)
-            // If you are using a goBILDA Pinpoint computer, use its specific getter methods instead.
-            telemetry.addData("Odometry I2C Port 2", "Connected / Reading Active");
-            // telemetry.addData("Odom X", odom.getX());
-            // telemetry.addData("Odom Y", odom.getY());
 
             telemetry.update();
         }
